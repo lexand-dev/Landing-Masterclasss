@@ -1,10 +1,18 @@
+import { Link } from "react-router-dom";
+import Menu from "../components/Menu";
+
 export default function Navbar() {
   return (
-    <nav className="w-full bg-[#58B3D0] h-16 text-center">
-      <p className="font-sans text-xl font-bold text-white pt-4">
-        Dev MasterClass <span className="text-[#FCE690]">+</span>
-      </p>
-    </nav>
+    <>
+      <nav className="w-full flex bg-[#58B3D0] h-16 ">
+        <Link to="/">
+          <h1 className="font-sans text-xl font-bold text-white pt-4">
+            Dev MasterClass <span className="text-[#FCE690]">+</span>
+          </h1>
+        </Link>
+        <Menu />
+      </nav>
+    </>
   );
 }
 
