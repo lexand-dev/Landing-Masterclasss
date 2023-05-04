@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../components/Button";
 
 export default function Hero() {
@@ -13,7 +14,9 @@ export default function Hero() {
           programación de alta demanda que te ayuden a impulsar tu carrera en
           tecnología? ¡Estás en el lugar correcto!{" "}
         </p>
-        <Button name={"Ver Cursos"} />
+        <Button>
+          <Link to="/cursos">Ver Cursos</Link>
+        </Button>
       </div>
     </header>
   );

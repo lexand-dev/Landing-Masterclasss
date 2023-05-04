@@ -1,10 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Landing from "./Landing/Landing";
-import Navbar from "./Landing/Navbar";
+import Navbar from "./components/Navbar";
 import AdminBoard from "./pages/AdminBoard";
 import Cursos from "./pages/Cursos";
 import Login from "./pages/Login";
 import Logout from "./pages/Logout";
+import NotFound from "./pages/NotFound";
 import Profile from "./pages/Profile";
 import Register from "./pages/Register";
 
@@ -20,6 +21,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/logout" element={<Logout />} />
         <Route path="/register" element={<Register />} />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

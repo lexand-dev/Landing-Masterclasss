@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../components/Button";
 
 export default function About() {
@@ -21,7 +22,9 @@ export default function About() {
             aprender habilidades de programación que transformarán tu carrera en
             tecnología!
           </p>
-          <Button name={"Más Info"} />
+          <Button>
+            <Link to="/cursos">Cursos</Link>
+          </Button>
         </div>
 
         <div className="flex flex-col place-items-center md:w-96">
