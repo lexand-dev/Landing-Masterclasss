@@ -1,4 +1,4 @@
-import { courses } from "../config/course";
+import { courses } from "../../config/course";
 import Course from "./Course";
 
 export default function Courses() {

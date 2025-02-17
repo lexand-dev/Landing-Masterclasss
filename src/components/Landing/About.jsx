@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import Button from "../components/Button";
+import { Link } from "@tanstack/react-router";
+import Button from "../Button";
 
 export default function About() {
   return (

@@ -1,4 +1,4 @@
-import { features } from "../config/features";
+import { features } from "../../config/features";
 
 export default function Features() {
   return (
